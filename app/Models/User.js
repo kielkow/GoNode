@@ -15,6 +15,10 @@ class User extends Model {
     })
   }
 
+  adresses () {
+    return this.hasMany('App/Models/UserAddress')
+  }
+
   tokens () {
     return this.hasMany('App/Models/Token')
   }
